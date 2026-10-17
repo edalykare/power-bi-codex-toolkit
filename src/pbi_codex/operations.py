@@ -5,6 +5,7 @@ import math
 import platform
 import shutil
 import statistics
+import sys
 from collections import Counter
 from pathlib import Path
 
@@ -63,9 +64,13 @@ def inventory(objects: list[Object]) -> dict:
 
 def doctor() -> dict:
     # Existence checks only: never launch third-party tools or trigger login.
+    # platform.system() can spawn a shell on Windows/Python 3.11; use interpreter metadata.
+    system = {"win32": "Windows", "darwin": "Darwin", "linux": "Linux"}.get(
+        sys.platform, sys.platform
+    )
     return {
         "python": platform.python_version(),
-        "platform": platform.system(),
+        "platform": system,
         "tools": {
             name: shutil.which(name)
             for name in ("git", "codex", "fab", "node", "npx", "dotnet", "TabularEditor")

@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Fix `doctor` launching an implicit system probe on Windows with Python 3.11.
+  Read the OS identifier from interpreter metadata and retain the no-subprocess check.
+- Add regression coverage for Windows, macOS and Linux platform reporting without OS probes.
+
 ## 0.1.0 — 2026-10-17
 
 - Initial Codex-native alpha with nine modular skills and two optional custom agents.

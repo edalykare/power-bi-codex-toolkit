@@ -7,6 +7,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
 
 from tests.helpers import DEMO, ROOT, minimal_model, write, write_json
 
@@ -79,6 +80,27 @@ class CliTests(unittest.TestCase):
             status, out, _ = self.call("doctor")
         self.assertEqual(status, 0)
         self.assertIn("tools", json.loads(out))
+
+    def test_doctor_reports_platform_without_os_probes(self):
+        from unittest.mock import patch
+
+        for identifier, expected in (
+            ("win32", "Windows"),
+            ("darwin", "Darwin"),
+            ("linux", "Linux"),
+        ):
+            # Keep shutil.which on the host OS while simulating interpreter metadata for doctor.
+            with (
+                self.subTest(platform=identifier),
+                patch(
+                    "pbi_codex.operations.sys", SimpleNamespace(platform=identifier), create=True
+                ),
+                patch("platform.system", side_effect=AssertionError("OS probe must not run")),
+                patch("subprocess.run", side_effect=AssertionError("Process must not launch")),
+            ):
+                status, out, _ = self.call("doctor")
+                self.assertEqual(status, 0)
+                self.assertEqual(json.loads(out)["platform"], expected)
 
     def test_cache_directories_are_ignored(self):
         write(self.root / ".pbi" / "bad.json", "{")
