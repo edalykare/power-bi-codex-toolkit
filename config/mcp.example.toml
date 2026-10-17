@@ -1,0 +1,25 @@
+# Opt-in examples, not loaded by the toolkit. Merge selected sections into
+# ~/.codex/config.toml or a trusted project's .codex/config.toml.
+# https://learn.chatgpt.com/docs/extend/mcp
+
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"
+
+[mcp_servers.microsoftLearn]
+url = "https://learn.microsoft.com/api/mcp"
+
+# Windows local Power BI Authoring MCP. Pin a reviewed version, then enable it.
+# Do not auto-accept its EULA. Inspect tools before modifying models.
+[mcp_servers.powerbiAuthoringLocal]
+command = "npx"
+args = ["--yes", "@microsoft/powerbi-modeling-mcp@REVIEWED_VERSION", "--start"]
+enabled = false
+startup_timeout_sec = 60
+
+# Resolve and pin a reviewed package version before enabling this example.
+# Package and arguments follow Microsoft's Fabric local MCP setup docs.
+[mcp_servers.fabricLocal]
+command = "npx"
+args = ["--yes", "@microsoft/fabric-mcp@REVIEWED_VERSION", "server", "start", "--mode", "all"]
+enabled = false
+startup_timeout_sec = 60

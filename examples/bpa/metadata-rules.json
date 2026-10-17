@@ -1,0 +1,22 @@
+[
+  {
+    "ID": "TOOLKIT_MEASURE_DESCRIPTION",
+    "Name": "Measures should have descriptions",
+    "Category": "Metadata",
+    "Description": "Explain business meaning and relevant filter behavior.",
+    "Severity": 2,
+    "Scope": "Measure",
+    "Expression": "string.IsNullOrWhiteSpace(Description)",
+    "CompatibilityLevel": 1200
+  },
+  {
+    "ID": "TOOLKIT_MEASURE_FORMAT",
+    "Name": "Measures should have format strings",
+    "Category": "Metadata",
+    "Description": "Check dynamic formatting before adding a static format string.",
+    "Severity": 2,
+    "Scope": "Measure",
+    "Expression": "string.IsNullOrWhiteSpace(FormatString)",
+    "CompatibilityLevel": 1200
+  }
+]

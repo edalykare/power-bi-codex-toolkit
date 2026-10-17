@@ -1,0 +1,12 @@
+include AGENTS.md ATTRIBUTIONS.md CHANGELOG.md CONTRIBUTING.md SECURITY.md .pre-commit-config.yaml
+include .editorconfig .gitattributes .gitignore
+recursive-include .github *.yml *.md
+recursive-include .agents/skills *.md *.py
+recursive-include .codex/agents *.toml
+recursive-include config *.toml
+recursive-include docs *.md *.json
+recursive-include examples *.md *.json *.tmdl *.pbip *.pbir *.pbism *.py *.sql *.dax
+recursive-include scripts *.py
+recursive-include tests *.py
+recursive-include vendor *.json LICENSE
+global-exclude __pycache__ *.py[cod]

@@ -1,0 +1,747 @@
+{
+  "repository": "https://github.com/data-goblin/power-bi-agentic-development",
+  "commit": "2ad33e597e965ee2c208f06b766f869c2c060a44",
+  "reviewedOn": "2026-10-17",
+  "plugins": [
+    {
+      "name": "custom-visuals",
+      "skills": [
+        {
+          "path": "plugins/custom-visuals/skills/deneb-visuals/SKILL.md",
+          "bytes": 12507,
+          "sha256": "aad16f2c795175763a838403efa02661af5783b3554923623e512e224740e781"
+        },
+        {
+          "path": "plugins/custom-visuals/skills/powerbi-custom-visuals/SKILL.md",
+          "bytes": 5904,
+          "sha256": "d5b47dedeb51c1310784c0e2e05af2e77decbaa6b061a43817b721bdeac60f91"
+        },
+        {
+          "path": "plugins/custom-visuals/skills/python-visuals/SKILL.md",
+          "bytes": 8319,
+          "sha256": "8d25a8063f1bd2a3db7e19150e3745d0a4e59082791496f5f0120f86c9c5bf67"
+        },
+        {
+          "path": "plugins/custom-visuals/skills/r-visuals/SKILL.md",
+          "bytes": 9178,
+          "sha256": "cf68f7174d8a9d07350ba583468ee65cc70cb67bf2c9f5ad768c0a02380ff82f"
+        },
+        {
+          "path": "plugins/custom-visuals/skills/svg-visuals/SKILL.md",
+          "bytes": 17081,
+          "sha256": "5925af727085152fe536368e0371a35e73aeb3083d82a39d07bbc06271bf3c6e"
+        }
+      ],
+      "agents": [],
+      "hooks": [],
+      "mcpConfigs": [
+        {
+          "path": "plugins/custom-visuals/.mcp.json",
+          "bytes": 125,
+          "sha256": "abea05a5026fb7b4bc76c30065ad3a914ff6e7fef5780da9d73f4f9e568cf66f"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "name": "databricks-cli",
+      "skills": [],
+      "agents": [],
+      "hooks": [
+        {
+          "path": "plugins/databricks-cli/hooks/databricks.ts",
+          "bytes": 9311,
+          "sha256": "a8acad4c414a8c6e6ce73fa23fb1e90621c8cece6a2caeb547be6d80a9949f11"
+        },
+        {
+          "path": "plugins/databricks-cli/hooks/hooks.json",
+          "bytes": 34,
+          "sha256": "d842d789476d67282d0f04b7e5fdc68a3d981ccec65dd79cfa2d11eed13fb828"
+        },
+        {
+          "path": "plugins/databricks-cli/hooks/icon-data.ts",
+          "bytes": 2079,
+          "sha256": "8e26c6b1dbf1570e8d87bf505c5f24856aff98e2e9ed119c0f4ad12b64673223"
+        },
+        {
+          "path": "plugins/databricks-cli/hooks/icons.ts",
+          "bytes": 4427,
+          "sha256": "e9ebbc602e71db750785e863c826e00dfff31f91a4d6beac4b9dccb5ace037e0"
+        },
+        {
+          "path": "plugins/databricks-cli/hooks/open.ts",
+          "bytes": 1785,
+          "sha256": "c86e475f513b5fa0be2b301f630ed6f8071ed1db4f7cd912dbcb14b2402d69db"
+        },
+        {
+          "path": "plugins/databricks-cli/hooks/parse.ts",
+          "bytes": 18434,
+          "sha256": "831b7b6b783bd78dc45cfa3a1757eba71030711f1db0b0630235468c8c5b7325"
+        },
+        {
+          "path": "plugins/databricks-cli/hooks/register.tsx",
+          "bytes": 56610,
+          "sha256": "4972459c24f04056d6684c363fb6ae032931dcd322fe57ecdcf220774080b93b"
+        },
+        {
+          "path": "plugins/databricks-cli/hooks/rows.tsx",
+          "bytes": 6021,
+          "sha256": "9b6db1cefb675e48123f7d358c0474d56c723521f5631600989dd084ad38ba60"
+        },
+        {
+          "path": "plugins/databricks-cli/hooks/svg-data.ts",
+          "bytes": 2530,
+          "sha256": "1368df9b07c377db497081b101934c3fcb42370ba6b224a39a8170c4c313801e"
+        },
+        {
+          "path": "plugins/databricks-cli/hooks/tree.ts",
+          "bytes": 3829,
+          "sha256": "9c6340b4af17f0d6117c728eebedd6ba60e2d0630a94b1ee720a49faad8c282a"
+        },
+        {
+          "path": "plugins/databricks-cli/hooks/zone.tsx",
+          "bytes": 675,
+          "sha256": "15eb8b94074075318ecebbda01e79c107020c4d54a1aae8921e16aed5a538ade"
+        }
+      ],
+      "mcpConfigs": [],
+      "commands": []
+    },
+    {
+      "name": "etl",
+      "skills": [
+        {
+          "path": "plugins/etl/skills/executing-spark/SKILL.md",
+          "bytes": 6647,
+          "sha256": "842dbe54cb282a15bbd9a6568bb75361b38a0a445f032e1405650b9c472c5e61"
+        },
+        {
+          "path": "plugins/etl/skills/using-duckdb/SKILL.md",
+          "bytes": 4691,
+          "sha256": "e61c3adf0a27224ccc633a28fc2b4ecb6eecd481f01750d6a58a16e17235933b"
+        }
+      ],
+      "agents": [],
+      "hooks": [],
+      "mcpConfigs": [],
+      "commands": []
+    },
+    {
+      "name": "fabric-admin",
+      "skills": [
+        {
+          "path": "plugins/fabric-admin/skills/audit-tenant-settings/SKILL.md",
+          "bytes": 18681,
+          "sha256": "ca9f9aa1c39ad7bc49d3ea5f795ee9a73fb2bcd1b34442cace09b7aa993a7edb"
+        },
+        {
+          "path": "plugins/fabric-admin/skills/fabric-capacity/SKILL.md",
+          "bytes": 5999,
+          "sha256": "d8c4cf272400410efdd2e633abc64518e1470ba13b3fbef9a055706c22145db1"
+        }
+      ],
+      "agents": [],
+      "hooks": [],
+      "mcpConfigs": [],
+      "commands": []
+    },
+    {
+      "name": "fabric-cli",
+      "skills": [
+        {
+          "path": "plugins/fabric-cli/skills/fabric-cli/SKILL.md",
+          "bytes": 39848,
+          "sha256": "9d6cc00a62edd3eb775e2239f88c430e1cc3e63c57d5e1ddf2c8bad2c05d8ffd"
+        }
+      ],
+      "agents": [],
+      "hooks": [
+        {
+          "path": "plugins/fabric-cli/hooks/fabric.ts",
+          "bytes": 8269,
+          "sha256": "aa22cba7c8a68ca7c78d5ec9de008f280baa26904bda984a03a674843dfeb836"
+        },
+        {
+          "path": "plugins/fabric-cli/hooks/hooks.json",
+          "bytes": 34,
+          "sha256": "d842d789476d67282d0f04b7e5fdc68a3d981ccec65dd79cfa2d11eed13fb828"
+        },
+        {
+          "path": "plugins/fabric-cli/hooks/icon-data.ts",
+          "bytes": 1450,
+          "sha256": "55315b6715139ed2c4108a79332d49f3f2a564b30137bfffcc92960717939c21"
+        },
+        {
+          "path": "plugins/fabric-cli/hooks/icons.ts",
+          "bytes": 5195,
+          "sha256": "f9f204c8f8c3d7f60cfa511b6a4c876bf885e6f64730bbde2f48ff44ee3e4e0f"
+        },
+        {
+          "path": "plugins/fabric-cli/hooks/open.ts",
+          "bytes": 1994,
+          "sha256": "8441096b35ddfde2f2316b12d1c20a7644dcfbc51465448bfb2dd9b0259a0773"
+        },
+        {
+          "path": "plugins/fabric-cli/hooks/parse.ts",
+          "bytes": 16927,
+          "sha256": "f4d561f6fd79ea07d9fac628a686e81dbf1bf869b822734a5226795a86717fd8"
+        },
+        {
+          "path": "plugins/fabric-cli/hooks/register.tsx",
+          "bytes": 101729,
+          "sha256": "6102e4cb0e8b39ded4a26e3331df4c6d303f9aec789a557cc839f392310f2931"
+        },
+        {
+          "path": "plugins/fabric-cli/hooks/rows.tsx",
+          "bytes": 6021,
+          "sha256": "9b6db1cefb675e48123f7d358c0474d56c723521f5631600989dd084ad38ba60"
+        },
+        {
+          "path": "plugins/fabric-cli/hooks/setting-data.ts",
+          "bytes": 48197,
+          "sha256": "a665a66fdece5355d53b3998ced92cbafc0a59b4411af1dcb8fb68969ab86700"
+        },
+        {
+          "path": "plugins/fabric-cli/hooks/setup.ts",
+          "bytes": 7776,
+          "sha256": "dea8ec1c3b5ac031b2b1c9b05bf315056e54c38e0b1557fc11e38bf2c7b7968c"
+        },
+        {
+          "path": "plugins/fabric-cli/hooks/svg-data.ts",
+          "bytes": 157457,
+          "sha256": "2c4f5c55d76d3af43b9937f94276f7eadbb5697fa953a1d8cb8f91550d310f3a"
+        },
+        {
+          "path": "plugins/fabric-cli/hooks/touch.ts",
+          "bytes": 1143,
+          "sha256": "dfd4274fc8b2df136068ff0aa890eb95ffd286d5d6ef397d3ea0040484ecb6de"
+        },
+        {
+          "path": "plugins/fabric-cli/hooks/tree.ts",
+          "bytes": 4154,
+          "sha256": "7c198533713b3a7528746edd0aab9ab0372057d583f2a3e440d4eecc959f63c8"
+        },
+        {
+          "path": "plugins/fabric-cli/hooks/zone.tsx",
+          "bytes": 675,
+          "sha256": "15eb8b94074075318ecebbda01e79c107020c4d54a1aae8921e16aed5a538ade"
+        }
+      ],
+      "mcpConfigs": [],
+      "commands": [
+        {
+          "path": "plugins/fabric-cli/commands/migrating-fabric-trial-capacities.md",
+          "bytes": 2684,
+          "sha256": "07625eb4b5ed5ce602974b4030390dae8852407f4cb634f7f804eac9e64cfcd5"
+        }
+      ]
+    },
+    {
+      "name": "fabric-data-app",
+      "skills": [],
+      "agents": [],
+      "hooks": [
+        {
+          "path": "plugins/fabric-data-app/hooks/apps.ts",
+          "bytes": 7895,
+          "sha256": "68958e2457e20eca0414c2c8cca162b7a23d5d33b68ad17e561d13ec11b57858"
+        },
+        {
+          "path": "plugins/fabric-data-app/hooks/clis.ts",
+          "bytes": 64,
+          "sha256": "2f5fb19b258a8a9db577fe2651a322a708e9fb34d5b1af5b0f326d12e1f9f741"
+        },
+        {
+          "path": "plugins/fabric-data-app/hooks/glyphs.ts",
+          "bytes": 3162,
+          "sha256": "0e0492f122d5fecd2749be62bd94d0ad6aace4a62467dc87716449754dbf0126"
+        },
+        {
+          "path": "plugins/fabric-data-app/hooks/hooks.json",
+          "bytes": 34,
+          "sha256": "d842d789476d67282d0f04b7e5fdc68a3d981ccec65dd79cfa2d11eed13fb828"
+        },
+        {
+          "path": "plugins/fabric-data-app/hooks/icons.ts",
+          "bytes": 2903,
+          "sha256": "9996645341307cfd19cf2517ad7819c95958963ea6392f3fa202da56b3d4b3ec"
+        },
+        {
+          "path": "plugins/fabric-data-app/hooks/open.ts",
+          "bytes": 1785,
+          "sha256": "c86e475f513b5fa0be2b301f630ed6f8071ed1db4f7cd912dbcb14b2402d69db"
+        },
+        {
+          "path": "plugins/fabric-data-app/hooks/parse.ts",
+          "bytes": 10007,
+          "sha256": "529c45b83c6cf1d5ad42cc6817990042e8bf0886f64db52ae20e4d17828afb88"
+        },
+        {
+          "path": "plugins/fabric-data-app/hooks/rayfin.ts",
+          "bytes": 3140,
+          "sha256": "44d8e24102b54a13cbd49488304a22b18a7cb990413ce3ff293b1f5ab83ccaf1"
+        },
+        {
+          "path": "plugins/fabric-data-app/hooks/register.tsx",
+          "bytes": 79141,
+          "sha256": "5c112314fac211dbe4d13677d565a9d39785bcd0190ff0f6ec265ed61e1ed65b"
+        },
+        {
+          "path": "plugins/fabric-data-app/hooks/rows.tsx",
+          "bytes": 6021,
+          "sha256": "9b6db1cefb675e48123f7d358c0474d56c723521f5631600989dd084ad38ba60"
+        },
+        {
+          "path": "plugins/fabric-data-app/hooks/svg-data.ts",
+          "bytes": 38098,
+          "sha256": "3b67b67386e720cc84fd5394723102dac868753652f7c4e67d313570b031f2ce"
+        },
+        {
+          "path": "plugins/fabric-data-app/hooks/tree.ts",
+          "bytes": 9987,
+          "sha256": "b83043abe86389c4973d8ec3369a304ac21152fe9a16cbb143b18cb22a3f986c"
+        },
+        {
+          "path": "plugins/fabric-data-app/hooks/zone.tsx",
+          "bytes": 675,
+          "sha256": "15eb8b94074075318ecebbda01e79c107020c4d54a1aae8921e16aed5a538ade"
+        }
+      ],
+      "mcpConfigs": [],
+      "commands": []
+    },
+    {
+      "name": "goblin-mode",
+      "skills": [
+        {
+          "path": "plugins/goblin-mode/skills/help-me-get-started/SKILL.md",
+          "bytes": 11688,
+          "sha256": "739feb2c71765be444084f00d7c80830849883a9dc2deaeee7cb2c6b92a633e9"
+        },
+        {
+          "path": "plugins/goblin-mode/skills/improve-my-agent-setup/SKILL.md",
+          "bytes": 17600,
+          "sha256": "5574e425d14f1467d6cf97996e4076553abbe98d332855e8802a8295845e98b8"
+        }
+      ],
+      "agents": [],
+      "hooks": [],
+      "mcpConfigs": [],
+      "commands": []
+    },
+    {
+      "name": "paginated-reports",
+      "skills": [
+        {
+          "path": "plugins/paginated-reports/skills/paginated-report/SKILL.md",
+          "bytes": 14182,
+          "sha256": "50279fce2d3f47e5b06c1017b9663da049932e98493a7ad9cce2b2855f6ca423"
+        }
+      ],
+      "agents": [],
+      "hooks": [
+        {
+          "path": "plugins/paginated-reports/hooks/README.md",
+          "bytes": 3491,
+          "sha256": "e14a439ba4c0b804e3952c64372c67533b22284c60e733182067facab38ebd8d"
+        },
+        {
+          "path": "plugins/paginated-reports/hooks/config.yaml",
+          "bytes": 438,
+          "sha256": "fb052d30b20291ca03077b380f07ba4d694ef8110c3d9fc048d7ab263bc6c12e"
+        },
+        {
+          "path": "plugins/paginated-reports/hooks/copilot-hooks.json",
+          "bytes": 657,
+          "sha256": "cc45e948651783f55f8b34461a856a694d52869707899d52517f8e57cbdaea86"
+        },
+        {
+          "path": "plugins/paginated-reports/hooks/hooks.json",
+          "bytes": 703,
+          "sha256": "8021ac8cc31244a24bdaa9b6d45faccae01e8162bdcfebac39ca8cebc8791d87"
+        },
+        {
+          "path": "plugins/paginated-reports/hooks/run-hook.ps1",
+          "bytes": 2323,
+          "sha256": "b19692123e2eb42e0919b7049bd5391e86868125c9b88077f837a67da047e2e1"
+        },
+        {
+          "path": "plugins/paginated-reports/hooks/validate-rdl.sh",
+          "bytes": 4243,
+          "sha256": "d4851882975cf778612bcfdd1dabbc74f6d0a3c4f2e8606c44a96dfe90962967"
+        }
+      ],
+      "mcpConfigs": [],
+      "commands": []
+    },
+    {
+      "name": "pbi-desktop",
+      "skills": [
+        {
+          "path": "plugins/pbi-desktop/skills/connect-pbid/SKILL.md",
+          "bytes": 40478,
+          "sha256": "b9ef8009e0bf380931ada95c7fb04971559b5fc5f6f80c14c170aef0bd835aed"
+        }
+      ],
+      "agents": [
+        {
+          "path": "plugins/pbi-desktop/agents/query-listener.agent.md",
+          "bytes": 3862,
+          "sha256": "f5f1be60300e01672d17e6b8f20b516e55b776602256beb660c53acf4fa3caf4"
+        }
+      ],
+      "hooks": [
+        {
+          "path": "plugins/pbi-desktop/hooks/README.md",
+          "bytes": 6374,
+          "sha256": "6a7e1f7834068d8551e714bd94ed2e8d93d282705d209059d9f4b1286047a22d"
+        },
+        {
+          "path": "plugins/pbi-desktop/hooks/check-referential-integrity.ps1",
+          "bytes": 6713,
+          "sha256": "dc4a114e09efe79b2180dd435f845a02b42f61470c1efbd68049c19818d583fd"
+        },
+        {
+          "path": "plugins/pbi-desktop/hooks/config.yaml",
+          "bytes": 1185,
+          "sha256": "d630f230f411c944ec38fd6707c9e58634a9d3bdf5a8a9debfea33828c28e569"
+        },
+        {
+          "path": "plugins/pbi-desktop/hooks/copilot-hooks.json",
+          "bytes": 1208,
+          "sha256": "9f961191471f516959d90cc1cf9d7e42f26aae5e7a6de35e9bd6056a0bce3aed"
+        },
+        {
+          "path": "plugins/pbi-desktop/hooks/hooks.json",
+          "bytes": 2151,
+          "sha256": "e1581c0102b49acbff9e015cf396598df3c1d3758ffda01d4bdf59a1a46856f4"
+        },
+        {
+          "path": "plugins/pbi-desktop/hooks/pbi-hooks.sh",
+          "bytes": 30442,
+          "sha256": "497c62d8f95d79256a4c406b818d3281cd9e772f6e2a0dfa247416ccfd397395"
+        },
+        {
+          "path": "plugins/pbi-desktop/hooks/run-hook.ps1",
+          "bytes": 2323,
+          "sha256": "b19692123e2eb42e0919b7049bd5391e86868125c9b88077f837a67da047e2e1"
+        },
+        {
+          "path": "plugins/pbi-desktop/hooks/snapshot-model.ps1",
+          "bytes": 2804,
+          "sha256": "d3edd512a7e393df4cec77aeedfb3084446bd5f1ad1fdd5429c88b1f2578daaa"
+        }
+      ],
+      "mcpConfigs": [],
+      "commands": []
+    },
+    {
+      "name": "pbip",
+      "skills": [
+        {
+          "path": "plugins/pbip/skills/pbip/SKILL.md",
+          "bytes": 15213,
+          "sha256": "e12bd6a3fbed68cde20999115491cafa431ca2b91aa2c4b07991dc16cc89a148"
+        },
+        {
+          "path": "plugins/pbip/skills/pbir-format/SKILL.md",
+          "bytes": 17470,
+          "sha256": "3c92496af89868a2e713d8d20b67df8063f7bea4ee8e22657c9cb3d540885774"
+        },
+        {
+          "path": "plugins/pbip/skills/tmdl/SKILL.md",
+          "bytes": 21677,
+          "sha256": "fd2c3548a4587d5f9a7624fae370980eb481b0cbbab3d5d703de2c94a44c2539"
+        }
+      ],
+      "agents": [
+        {
+          "path": "plugins/pbip/agents/pbip-validator.agent.md",
+          "bytes": 12585,
+          "sha256": "55b231d945c4d6c8fe1dcac5f8e113e197729f78a0504fe296c920d825491c29"
+        }
+      ],
+      "hooks": [
+        {
+          "path": "plugins/pbip/hooks/README.md",
+          "bytes": 8855,
+          "sha256": "a7988794ffa1686808c0e71a11a203e457cbce68dccda58bf9cd24ec0b4e509c"
+        },
+        {
+          "path": "plugins/pbip/hooks/bin/tmdl-validate-darwin-arm64",
+          "bytes": 335888,
+          "sha256": "a77da5c67310fa10a257b2f4ad06e10f8c9ca394a6bde36ebead8d35e02b7017"
+        },
+        {
+          "path": "plugins/pbip/hooks/bin/tmdl-validate-darwin-x64",
+          "bytes": 324968,
+          "sha256": "7d35d1fa4dc519aa8e50b98fbed5e86122c5b393ac4423474b466e2cdc8cabdc"
+        },
+        {
+          "path": "plugins/pbip/hooks/bin/tmdl-validate-linux-x64",
+          "bytes": 354256,
+          "sha256": "02e757f0a4460d970c970bf312b06f231d91dac2df9ef827edc32456cbecb2fd"
+        },
+        {
+          "path": "plugins/pbip/hooks/bin/tmdl-validate-windows-x64.exe",
+          "bytes": 307200,
+          "sha256": "f42c941b883507e85276e38acf84cb4ac90906293f228b5bd03b0f235623d06e"
+        },
+        {
+          "path": "plugins/pbip/hooks/config.yaml",
+          "bytes": 1744,
+          "sha256": "68cbe69e3507901d27af59f2109d40bd413a28edf0e7b49be6dccf24122b9265"
+        },
+        {
+          "path": "plugins/pbip/hooks/copilot-hooks.json",
+          "bytes": 1632,
+          "sha256": "13b0d5c08dab4772246be949139d094e28577b758b513207b96299c7e600d2a7"
+        },
+        {
+          "path": "plugins/pbip/hooks/core-visual-catalog.json",
+          "bytes": 1779,
+          "sha256": "8199e28bf9a77df867d7275ebbc7a4ee510f59e761127409f3d9e22a9e3259a9"
+        },
+        {
+          "path": "plugins/pbip/hooks/hooks.json",
+          "bytes": 1572,
+          "sha256": "2a3d701ac27895e884c3b2bfb04161cb744d8c52acc3990183882c5e09795759"
+        },
+        {
+          "path": "plugins/pbip/hooks/run-hook.ps1",
+          "bytes": 2323,
+          "sha256": "b19692123e2eb42e0919b7049bd5391e86868125c9b88077f837a67da047e2e1"
+        },
+        {
+          "path": "plugins/pbip/hooks/validate-pbir.sh",
+          "bytes": 19184,
+          "sha256": "8d37966633786b13445729c19fb7ccfa53280445646a30c924bca09ed3c2f527"
+        },
+        {
+          "path": "plugins/pbip/hooks/validate-report-binding.sh",
+          "bytes": 7529,
+          "sha256": "e350e8ba4c44409a10c35bf53672e1db9ee0bc492e1778fbededb702001f2407"
+        },
+        {
+          "path": "plugins/pbip/hooks/validate-tmdl.sh",
+          "bytes": 6430,
+          "sha256": "0f00529ad3cc8d0dcd5d3bbda0730ebaf58519f106a8ad3cd6d4b43a599be00d"
+        }
+      ],
+      "mcpConfigs": [],
+      "commands": []
+    },
+    {
+      "name": "reports",
+      "skills": [
+        {
+          "path": "plugins/reports/skills/create-pbi-report/SKILL.md",
+          "bytes": 14711,
+          "sha256": "4934d72242f4e100a004f59ef57c7a5eb69ad6ee300b4b2f9289dfb8641443dd"
+        },
+        {
+          "path": "plugins/reports/skills/modifying-theme-json/SKILL.md",
+          "bytes": 6684,
+          "sha256": "11d8d4a2007d708a4948313cb138eab297dbd216fe933c1b44a0709d976a4682"
+        },
+        {
+          "path": "plugins/reports/skills/pbi-report-design/SKILL.md",
+          "bytes": 21438,
+          "sha256": "b53074ccead17a8ea956c81dd80bfe35cff15d2bb0f36a0df0659e53f56fdf80"
+        },
+        {
+          "path": "plugins/reports/skills/pbir-cli/SKILL.md",
+          "bytes": 36002,
+          "sha256": "69cc5be3f99dccce432d1c70cdffe8bd67bbb8d1ae591040a9c1ebc039d0e376"
+        },
+        {
+          "path": "plugins/reports/skills/review-report/SKILL.md",
+          "bytes": 16914,
+          "sha256": "712e329e91bf5cb22d5826366744d51fb73dbaa9cd234469c6f3903616b68b17"
+        }
+      ],
+      "agents": [
+        {
+          "path": "plugins/reports/agents/deneb-reviewer.agent.md",
+          "bytes": 2265,
+          "sha256": "b58d7b7deda37390f28e5781566db789854463c7ce9e18eab70465fdef10ec03"
+        },
+        {
+          "path": "plugins/reports/agents/python-reviewer.agent.md",
+          "bytes": 1757,
+          "sha256": "89e78978862ac5b99bafb431538e09ce5c7ec3d6d8d4da83519a07a9fa3cefb9"
+        },
+        {
+          "path": "plugins/reports/agents/r-reviewer.agent.md",
+          "bytes": 1716,
+          "sha256": "46d625a202ad70c65c3bffea9b1064c40899f9245dfb70faf0a7aea2defa01e9"
+        },
+        {
+          "path": "plugins/reports/agents/svg-reviewer.agent.md",
+          "bytes": 1875,
+          "sha256": "1ece72b49c10c49d89526b20499f0454a6a8f41a5b1c5e2f2ae52d77e2378110"
+        }
+      ],
+      "hooks": [
+        {
+          "path": "plugins/reports/hooks/fabric.ts",
+          "bytes": 523,
+          "sha256": "4131ae00e1c26abaeaf38ef500540ab9f9b8a9253613ea396dee2f001ce65f2d"
+        },
+        {
+          "path": "plugins/reports/hooks/hooks.json",
+          "bytes": 34,
+          "sha256": "d842d789476d67282d0f04b7e5fdc68a3d981ccec65dd79cfa2d11eed13fb828"
+        },
+        {
+          "path": "plugins/reports/hooks/icon-data.ts",
+          "bytes": 1949,
+          "sha256": "40fbe927b94fe8f87991bc0d1f22cfc2d40c99ca6b92d9f5c9120da1cb43f9b1"
+        },
+        {
+          "path": "plugins/reports/hooks/icons.ts",
+          "bytes": 8534,
+          "sha256": "485976e088da798f9b60b9c6ad1543c6e45a56bc39b631c339972f148be71ec4"
+        },
+        {
+          "path": "plugins/reports/hooks/open.ts",
+          "bytes": 1785,
+          "sha256": "c86e475f513b5fa0be2b301f630ed6f8071ed1db4f7cd912dbcb14b2402d69db"
+        },
+        {
+          "path": "plugins/reports/hooks/parse.ts",
+          "bytes": 6459,
+          "sha256": "d9fbc13ca8038526c1dd4bf9aaeaa6bb402f362524d5797de45eae567c7e330a"
+        },
+        {
+          "path": "plugins/reports/hooks/register.tsx",
+          "bytes": 53927,
+          "sha256": "b4496308b38526ddc9a7424f231a9c3ca6f4b076e6a70016e7faa493b1796b97"
+        },
+        {
+          "path": "plugins/reports/hooks/report.ts",
+          "bytes": 15527,
+          "sha256": "d655488000dcdd1c8f938a730794cc4c26b62bc4cca97ffcfbb473689bb411c0"
+        },
+        {
+          "path": "plugins/reports/hooks/rows.tsx",
+          "bytes": 6021,
+          "sha256": "9b6db1cefb675e48123f7d358c0474d56c723521f5631600989dd084ad38ba60"
+        },
+        {
+          "path": "plugins/reports/hooks/svg-data.ts",
+          "bytes": 8244,
+          "sha256": "2272dcef9c736c6a447cda2ee668be7fe2545fe61f85f0594cdc75ae58179f8d"
+        },
+        {
+          "path": "plugins/reports/hooks/touch.ts",
+          "bytes": 2138,
+          "sha256": "0f54008ca6a6949d4b3589556720c3dfd60fc0a906302eae44ac7101f4066549"
+        },
+        {
+          "path": "plugins/reports/hooks/tree.ts",
+          "bytes": 2556,
+          "sha256": "34e1124d3ab504d64f9bd148e017dd2b43f3ac68c557062f076d0f17ed06cba6"
+        },
+        {
+          "path": "plugins/reports/hooks/zone.tsx",
+          "bytes": 675,
+          "sha256": "15eb8b94074075318ecebbda01e79c107020c4d54a1aae8921e16aed5a538ade"
+        }
+      ],
+      "mcpConfigs": [],
+      "commands": []
+    },
+    {
+      "name": "semantic-models",
+      "skills": [
+        {
+          "path": "plugins/semantic-models/skills/dax/SKILL.md",
+          "bytes": 3263,
+          "sha256": "1ccea3305ed45fdd0385ce88f62a993338e19dd77e1f31c17713dd3a048de1c7"
+        },
+        {
+          "path": "plugins/semantic-models/skills/lineage-analysis/SKILL.md",
+          "bytes": 4091,
+          "sha256": "a41238d4e39e41ed0ee902d9fdb3e6b3b75f2afe4379e59d4e73cf574db82e30"
+        },
+        {
+          "path": "plugins/semantic-models/skills/organize-semantic-model/SKILL.md",
+          "bytes": 13868,
+          "sha256": "d95f0d16b5eb09856362d74a1bd4ef493178855a536f749f89043609b0147bd7"
+        },
+        {
+          "path": "plugins/semantic-models/skills/power-query/SKILL.md",
+          "bytes": 8941,
+          "sha256": "f2080aff317da09d628589028af1606bd19334b6f0ac959df443a02f7b72627e"
+        },
+        {
+          "path": "plugins/semantic-models/skills/refresh-semantic-model/SKILL.md",
+          "bytes": 14078,
+          "sha256": "6a453caa92bc2eadf9c1a7f299b14251e4f25aa84d61c15b2752c5b0b2b1f503"
+        },
+        {
+          "path": "plugins/semantic-models/skills/semantic-model/SKILL.md",
+          "bytes": 12030,
+          "sha256": "47f74981748556d7d49a95b4bda2a33ae8bf7579502a8950209ca43010bea66e"
+        }
+      ],
+      "agents": [
+        {
+          "path": "plugins/semantic-models/agents/semantic-model-auditor.agent.md",
+          "bytes": 14479,
+          "sha256": "c7528be3cc87b560c6dc708a9954ad5df9dc7824712184057794b19a2ff286ae"
+        }
+      ],
+      "hooks": [],
+      "mcpConfigs": [],
+      "commands": []
+    },
+    {
+      "name": "tabular-editor",
+      "skills": [
+        {
+          "path": "plugins/tabular-editor/skills/bpa-rules/SKILL.md",
+          "bytes": 17697,
+          "sha256": "de9b6a362cba8f6796fd87d44d8b736dfe94db2bdc481d168532cab6b0e1e675"
+        },
+        {
+          "path": "plugins/tabular-editor/skills/c-sharp-scripting/SKILL.md",
+          "bytes": 14889,
+          "sha256": "967fb8bb345e4e2ff415ce4063b41d87f63341a567825468158a27d3f5736c24"
+        },
+        {
+          "path": "plugins/tabular-editor/skills/te-cli/SKILL.md",
+          "bytes": 22772,
+          "sha256": "aa2c717ceeccfd0c07a37b3ad67231c5a2cabe7d583955a773bbff25e0690b0f"
+        },
+        {
+          "path": "plugins/tabular-editor/skills/te-docs/SKILL.md",
+          "bytes": 6620,
+          "sha256": "e2c1a6be437ba5aa831baacdd5bc50752cfe600906a8609ed45ffa2e3b1d79e6"
+        },
+        {
+          "path": "plugins/tabular-editor/skills/te2-cli/SKILL.md",
+          "bytes": 7951,
+          "sha256": "68c5fde884bd166689a2353773d64238668779b5aafc83fb9a048b6fee409c69"
+        }
+      ],
+      "agents": [
+        {
+          "path": "plugins/tabular-editor/agents/bpa-expression-helper.agent.md",
+          "bytes": 3644,
+          "sha256": "6b1eebe2c89ae1879e4c7a4b562ed7bd4a1b0905d695e4fa897219ec651bcc84"
+        }
+      ],
+      "hooks": [],
+      "mcpConfigs": [],
+      "commands": [
+        {
+          "path": "plugins/tabular-editor/commands/suggest-rule.md",
+          "bytes": 2527,
+          "sha256": "6f978ad83e1c5401702fa9edb1fa30954c5e17607602fda70754ac86b1526688"
+        }
+      ]
+    }
+  ]
+}

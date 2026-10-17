@@ -1,0 +1,14 @@
+repos:
+  - repo: local
+    hooks:
+      - id: toolkit-structure
+        name: Check toolkit skills, links and configuration
+        entry: python scripts/check_repo.py
+        language: system
+        pass_filenames: false
+      - id: demo-static-validation
+        name: Validate the synthetic Power BI demo
+        entry: python scripts/pbi.py check examples/retail --strict
+        language: system
+        pass_filenames: false
+        files: ^(src/|examples/retail/|scripts/pbi.py)

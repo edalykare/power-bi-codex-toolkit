@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "RevenueByCategory",
+  "position": {"x": 48, "y": 48, "z": 0, "height": 500, "width": 1100, "tabOrder": 0},
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {"projections": [{
+          "field": {"Column": {"Expression": {"SourceRef": {"Entity": "Product"}}, "Property": "Category"}},
+          "queryRef": "Product.Category",
+          "nativeQueryRef": "Category"
+        }]},
+        "Y": {"projections": [{
+          "field": {"Measure": {"Expression": {"SourceRef": {"Entity": "Sales"}}, "Property": "Revenue"}},
+          "queryRef": "Sales.Revenue",
+          "nativeQueryRef": "Revenue"
+        }]}
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

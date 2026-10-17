@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "workspace": "Retail Development.Workspace",
+  "items": [
+    {"name": "Retail", "type": "Notebook", "source": "notebooks/retail-quality.py"},
+    {"name": "Retail", "type": "Warehouse", "source": "warehouse/retail-quality.sql"}
+  ]
+}

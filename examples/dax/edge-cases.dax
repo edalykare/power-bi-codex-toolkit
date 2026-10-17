@@ -1,0 +1,10 @@
+// Tests are evaluated by the connected engine; the local linter does not execute DAX.
+EVALUATE
+ROW(
+    "Total revenue", [Revenue],
+    "Total cost", [Cost],
+    "Total profit", [Profit],
+    "Total margin", [Profit Margin],
+    "Zero revenue margin", CALCULATE([Profit Margin], 'Sales'[RevenueAmount] = 0),
+    "Empty margin", CALCULATE([Profit Margin], 'Product'[Category] = "Missing")
+)

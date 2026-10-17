@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "provenance": "Synthetic illustration; these are not measurements from Power BI.",
+  "cacheState": "illustration-only",
+  "cases": [{"name": "Revenue by category", "baselineMs": [120, 130, 125, 127, 123], "candidateMs": [95, 100, 98, 96, 99]}]
+}

@@ -1,0 +1,25 @@
+/// Product dimension with synthetic categories.
+table Product
+	lineageTag: 02dc7f76-37fa-49aa-a242-6483527f9fd6
+
+	column ProductKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: ProductKey
+		lineageTag: 908f58dd-4cdb-4207-8cf2-660a94144b99
+
+	column Category
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Category
+		lineageTag: e66c59f9-81fc-4e83-b083-3876cd4572fc
+
+	partition Product = m
+		mode: import
+		source =
+			let
+				Source = #table(type table [ProductKey = Int64.Type, Category = text], {{1, "Bikes"}, {2, "Accessories"}})
+			in
+				Source

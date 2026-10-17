@@ -1,0 +1,59 @@
+/// Four synthetic sales rows; no credentials or external data sources.
+table Sales
+	lineageTag: 4548efdd-7bf4-4bde-9d14-5adca563f7f4
+
+	/// Sum of transaction revenue in the current filter context.
+	measure Revenue = SUM('Sales'[RevenueAmount])
+		formatString: #,0.00
+		displayFolder: Sales
+		lineageTag: fff84966-336c-4c21-b3e4-904e88ae68ea
+
+	/// Sum of transaction costs in the current filter context.
+	measure Cost = SUM('Sales'[CostAmount])
+		formatString: #,0.00
+		displayFolder: Sales
+		lineageTag: 8e59aada-d996-49bb-a45a-f4930a093239
+
+	/// Revenue less cost, preserving the current filter context.
+	measure Profit = [Revenue] - [Cost]
+		formatString: #,0.00
+		displayFolder: Sales
+		lineageTag: 8c5b064c-bd47-442f-b025-ea0ba0724803
+
+	/// Profit as a share of revenue; BLANK when revenue is zero or BLANK.
+	measure 'Profit Margin' = DIVIDE([Profit], [Revenue])
+		formatString: 0.0%
+		displayFolder: Sales
+		lineageTag: 1a8532dc-8bf3-45b4-a094-f04cda1cac30
+
+	column ProductKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: ProductKey
+		lineageTag: 837154d1-80ad-4c41-8243-ff808ba562f9
+
+	column RevenueAmount
+		dataType: decimal
+		isHidden
+		formatString: #,0.00
+		summarizeBy: sum
+		sourceColumn: RevenueAmount
+		lineageTag: 8cb2d8c2-6fe2-48b0-b1f9-9c74220c32eb
+
+	column CostAmount
+		dataType: decimal
+		isHidden
+		formatString: #,0.00
+		summarizeBy: sum
+		sourceColumn: CostAmount
+		lineageTag: 605d5b32-11e0-4aaf-98fa-bcb1ed671084
+
+	partition Sales = m
+		mode: import
+		source =
+			let
+				Source = #table(type table [ProductKey = Int64.Type, RevenueAmount = Currency.Type, CostAmount = Currency.Type], {{1, 1000, 700}, {1, 500, 350}, {2, 100, 40}, {2, 0, 0}})
+			in
+				Source

@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a reproducible toolkit failure using synthetic input
+title: '[Bug] '
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Observed and expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction and diagnostic output
+      description: Include exact commands and synthetic input. Remove tokens, IDs and customer data.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Versions and environment
+      description: OS, Python, toolkit revision, Codex version and relevant Microsoft tool/schema versions.
+    validations:
+      required: true

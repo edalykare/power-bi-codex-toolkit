@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ['3.11', '3.13']
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install local package and development tools
+        run: python -m pip install -e ".[dev]"
+      - name: Repository contracts and local links
+        run: python scripts/check_repo.py
+      - name: Lint
+        run: python -m ruff check .
+      - name: Format
+        run: python -m ruff format --check src scripts tests examples/fabric
+      - name: Regression and installation tests
+        run: python -m unittest discover -s tests -v
+      - name: Static demo validation
+        run: python scripts/pbi.py check examples/retail --strict
+      - name: DAX query lexical checks
+        run: python scripts/pbi.py dax examples/dax --strict
+      - name: Microsoft JSON schemas (no network resolution)
+        run: python scripts/validate_schemas.py
+      - name: Fabric proposal
+        run: python scripts/pbi.py fabric-plan examples/fabric/manifest.json
+      - name: Timing comparison
+        run: python scripts/pbi.py compare-timings examples/performance/timings.json
+      - name: Build source and wheel distributions
+        run: python -m build
+      - name: Install and run built distributions (offline)
+        run: python scripts/smoke_distribution.py
+
+  python-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Test checkout without installing runtime or development dependencies
+        run: python -S -m unittest discover -s tests -v

@@ -1,0 +1,15 @@
+name: Feature request
+description: Propose a focused capability or integration
+title: '[Feature] '
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem and intended outcome
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Proposed workflow, official sources and acceptance checks
+      description: Explain dependencies, local/live validation and authorization boundaries.

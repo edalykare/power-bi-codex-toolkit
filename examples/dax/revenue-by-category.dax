@@ -1,0 +1,9 @@
+// Run against the Retail demo with a real DAX engine.
+EVALUATE
+SUMMARIZECOLUMNS(
+    'Product'[Category],
+    "Revenue", [Revenue],
+    "Profit", [Profit],
+    "Margin", [Profit Margin]
+)
+ORDER BY 'Product'[Category]
